@@ -27,23 +27,23 @@ export async function generateMetadata(): Promise<Metadata> {
       locale: 'en_IN',
       images: [
         {
-          url: `${origin}/og/16x9.png`,
-          width: 1672,
-          height: 941,
+          url: `${origin}/og/16x9.jpg`,
+          width: 1200,
+          height: 675,
           alt: 'CM Groups of Companies — Chilli Milli',
-          type: 'image/png',
+          type: 'image/jpeg',
         },
       ],
     },
     twitter: {
-      card: 'summary',
+      card: 'summary_large_image',
       title: shareTitle,
       description: shareDescription,
       images: [
         {
-          url: `${origin}/og/1x1.png`,
-          width: 1254,
-          height: 1254,
+          url: `${origin}/og/16x9.jpg`,
+          width: 1200,
+          height: 675,
           alt: 'CM Groups of Companies — Chilli Milli',
         },
       ],

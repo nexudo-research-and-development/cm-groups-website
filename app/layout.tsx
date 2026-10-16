@@ -1,12 +1,12 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { getSiteUrl } from '@/lib/site'
+import { siteUrl } from '@/lib/site'
 import './globals.css'
 
 const description = 'Welcome to CM Groups of Companies (Chilli Milli), where assignments, personal tasks and entertainment come together. Tell us your next mission!'
 
 export const metadata: Metadata = {
-  metadataBase: new URL(getSiteUrl()),
+  metadataBase: new URL(siteUrl),
   title: {
     default: 'CM Groups of Companies | Chilli Milli — Tasks, Tunes & Total Fun',
     template: '%s | CM Groups of Companies',
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'CM Groups of Companies | Chilli Milli',
     description: 'Tasks, tunes and total Chilli Milli. Tell us your next mission!',
+    url: siteUrl,
     type: 'website',
     siteName: 'CM Groups of Companies',
     locale: 'en_IN',
